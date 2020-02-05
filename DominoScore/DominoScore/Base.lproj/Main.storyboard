@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="469-Ty-6b6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved View Controller-->
+        <scene sceneID="25u-35-I9F">
+            <objects>
+                <viewController storyboardIdentifier="savedVCID" id="XCf-2D-kvF" customClass="SavedViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2k0-a8-YNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Domino Score.png" translatesAutoresizingMaskIntoConstraints="NO" id="jpT-xN-dom">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-0c-xtJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.082028858359999998" green="0.050899393860000003" blue="0.020404219630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.058105409604350108" green="0.11894783170560372" blue="0.47965577411167515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082028858359999998" green="0.050899393860000003" blue="0.020404219630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wei-eC-m6W" firstAttribute="bottom" secondItem="jpT-xN-dom" secondAttribute="bottom" id="5zy-iP-I4Z"/>
+                            <constraint firstItem="wei-eC-m6W" firstAttribute="trailing" secondItem="jpT-xN-dom" secondAttribute="trailing" id="9pC-yb-xrY"/>
+                            <constraint firstItem="jpT-xN-dom" firstAttribute="top" secondItem="wei-eC-m6W" secondAttribute="top" id="IXr-64-Ddp"/>
+                            <constraint firstItem="jpT-xN-dom" firstAttribute="leading" secondItem="wei-eC-m6W" secondAttribute="leading" id="JGM-h9-WJu"/>
+                            <constraint firstItem="wei-eC-m6W" firstAttribute="trailing" secondItem="nBe-0c-xtJ" secondAttribute="trailing" id="VcN-n5-duO"/>
+                            <constraint firstItem="nBe-0c-xtJ" firstAttribute="leading" secondItem="wei-eC-m6W" secondAttribute="leading" id="YQP-t1-NHj"/>
+                            <constraint firstItem="wei-eC-m6W" firstAttribute="bottom" secondItem="nBe-0c-xtJ" secondAttribute="bottom" id="ft5-NI-4eI"/>
+                            <constraint firstItem="nBe-0c-xtJ" firstAttribute="top" secondItem="wei-eC-m6W" secondAttribute="top" id="kMD-cq-tX3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wei-eC-m6W"/>
+                    </view>
+                    <connections>
+                        <outlet property="savedTableView" destination="nBe-0c-xtJ" id="O6F-aX-BvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAg-mi-0zL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-594"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="2f7-l7-R6y">
+            <objects>
+                <viewController id="Z2y-wd-tN1" customClass="FirstViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EW-YC-S1O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Domino Score.png" translatesAutoresizingMaskIntoConstraints="NO" id="Il3-s7-jZu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N3B-8M-g3m">
+                                <rect key="frame" x="112" y="208" width="190" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hJ-s2-pP0">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playerCountButton:" destination="Z2y-wd-tN1" eventType="touchUpInside" id="b4i-Up-5xL"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRn-EO-q8Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-dp-ZRe">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playerCountButton:" destination="Z2y-wd-tN1" eventType="touchUpInside" id="Bh4-Fb-iyN"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEy-l5-YYM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbP-px-qp9">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playerCountButton:" destination="Z2y-wd-tN1" eventType="touchUpInside" id="RsR-YP-W8i"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEP-zq-3fe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="vBX-ak-fJJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="wjC-zB-bjR"/>
+                                </constraints>
+                            </stackView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player 3 name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-RV-fHA">
+                                <rect key="frame" x="10" y="448" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8e7-3T-AiM"/>
+                                </constraints>
+                                <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team 1 name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QcA-8O-fDa">
+                                <rect key="frame" x="10" y="308" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.082028858359999998" green="0.050899393860000003" blue="0.020404219630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cRg-ti-f6C"/>
+                                </constraints>
+                                <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team 2 name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJy-Mp-Ccz">
+                                <rect key="frame" x="10" y="378" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QCO-es-BWQ"/>
+                                </constraints>
+                                <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46P-ta-CEa">
+                                <rect key="frame" x="10" y="538" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.050980392156862744" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m3y-oN-oBb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButton:" destination="Z2y-wd-tN1" eventType="touchUpInside" id="i1u-wb-aoz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Type your team names  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY4-aH-ty7">
+                                <rect key="frame" x="88" y="138" width="238.5" height="50"/>
+                                <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G5v-Ac-8uL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <color key="textColor" red="0.04606378824" green="0.2017443478" blue="0.54741650819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="46P-ta-CEa" firstAttribute="top" secondItem="Dor-RV-fHA" secondAttribute="bottom" constant="50" id="1vU-L5-8ja"/>
+                            <constraint firstItem="Il3-s7-jZu" firstAttribute="top" secondItem="p4m-3z-HPj" secondAttribute="top" id="9ig-3s-5Ub"/>
+                            <constraint firstItem="p4m-3z-HPj" firstAttribute="trailing" secondItem="PJy-Mp-Ccz" secondAttribute="trailing" constant="10" id="AbJ-P0-3eH"/>
+                            <constraint firstItem="Dor-RV-fHA" firstAttribute="top" secondItem="PJy-Mp-Ccz" secondAttribute="bottom" constant="30" id="CLK-Dw-hwS"/>
+                            <constraint firstItem="p4m-3z-HPj" firstAttribute="trailing" secondItem="QcA-8O-fDa" secondAttribute="trailing" constant="10" id="Dkg-Ir-7Rk"/>
+                            <constraint firstItem="Dor-RV-fHA" firstAttribute="leading" secondItem="p4m-3z-HPj" secondAttribute="leading" constant="10" id="ILL-qc-ePz"/>
+                            <constraint firstItem="QcA-8O-fDa" firstAttribute="leading" secondItem="p4m-3z-HPj" secondAttribute="leading" constant="10" id="IR3-jb-x7F"/>
+                            <constraint firstItem="Dor-RV-fHA" firstAttribute="trailing" secondItem="p4m-3z-HPj" secondAttribute="trailing" constant="-10" id="IUu-tL-q8U"/>
+                            <constraint firstItem="p4m-3z-HPj" firstAttribute="trailing" secondItem="Il3-s7-jZu" secondAttribute="trailing" id="Joy-hf-9YY"/>
+                            <constraint firstItem="PJy-Mp-Ccz" firstAttribute="leading" secondItem="p4m-3z-HPj" secondAttribute="leading" constant="10" id="RiZ-7T-Ga1"/>
+                            <constraint firstItem="N3B-8M-g3m" firstAttribute="top" secondItem="LY4-aH-ty7" secondAttribute="bottom" constant="20" id="cGT-q5-izL"/>
+                            <constraint firstItem="Il3-s7-jZu" firstAttribute="leading" secondItem="p4m-3z-HPj" secondAttribute="leading" id="ch1-g8-S6P"/>
+                            <constraint firstItem="LY4-aH-ty7" firstAttribute="top" secondItem="p4m-3z-HPj" secondAttribute="top" constant="50" id="gAp-kQ-d8T"/>
+                            <constraint firstItem="PJy-Mp-Ccz" firstAttribute="top" secondItem="QcA-8O-fDa" secondAttribute="bottom" constant="30" id="mfM-AA-Qv0"/>
+                            <constraint firstItem="LY4-aH-ty7" firstAttribute="centerX" secondItem="p4m-3z-HPj" secondAttribute="centerX" id="n80-Fj-ulH"/>
+                            <constraint firstItem="QcA-8O-fDa" firstAttribute="top" secondItem="N3B-8M-g3m" secondAttribute="bottom" constant="50" id="odI-Bu-P6C"/>
+                            <constraint firstItem="p4m-3z-HPj" firstAttribute="bottom" secondItem="Il3-s7-jZu" secondAttribute="bottom" id="wgT-YT-3tj"/>
+                            <constraint firstItem="p4m-3z-HPj" firstAttribute="trailing" secondItem="46P-ta-CEa" secondAttribute="trailing" constant="10" id="xp1-kP-OiJ"/>
+                            <constraint firstItem="N3B-8M-g3m" firstAttribute="centerX" secondItem="LY4-aH-ty7" secondAttribute="centerX" id="zH6-hu-oKy"/>
+                            <constraint firstItem="46P-ta-CEa" firstAttribute="leading" secondItem="p4m-3z-HPj" secondAttribute="leading" constant="10" id="zfj-zS-E80"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p4m-3z-HPj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZIC-Kt-Xfa"/>
+                    <connections>
+                        <outlet property="fourPlayerButton" destination="TbP-px-qp9" id="mbp-a5-MiA"/>
+                        <outlet property="nameLabel" destination="LY4-aH-ty7" id="8sB-8F-O3r"/>
+                        <outlet property="player3TextField" destination="Dor-RV-fHA" id="HQa-Md-5dg"/>
+                        <outlet property="team1TextField" destination="QcA-8O-fDa" id="oCA-9G-cVQ"/>
+                        <outlet property="team2TextField" destination="PJy-Mp-Ccz" id="g9c-wu-hqj"/>
+                        <outlet property="threePlayerButton" destination="9a3-dp-ZRe" id="sFG-zc-8EC"/>
+                        <outlet property="twoPlayerButton" destination="2hJ-s2-pP0" id="8oM-09-xP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMX-sO-L3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358.125" y="118.30985915492958"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="jy5-Gv-yYo">
+            <objects>
+                <viewController storyboardIdentifier="infoVCID" id="wdw-ik-K1T" customClass="InfoViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGd-gc-QMX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-tW-bcd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.04606378824" green="0.2017443478" blue="0.54741650819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Number of Players: 2-4
+Type of Dominoes Used: Double 6
+Type of Game: Scoring Game
+
+Players: Two, three or four may play the game of Dominoes. If four are playing the game, it may be played as a partnership (the two players sitting opposite one another are partners).
+
+The Shuffle: To begin the dominoes are placed face down and “shuffled.” Players draw one domino. The player drawing the highest double or if no double, the highest domino plays first. Re-shuffle and then begin drawing the first hand.
+
+Drawing: Each player then draws seven dominoes for his hand. The remaining dominoes (the boneyard), if any, are left face down on the table to be drawn later if a player is unable to play from his hand.
+
+Begin Play: The player who drew the highest double or the highest domino plays first, playing any domino he wishes from his had.
+
+Object of the game: Scoring points by laying the dominoes end to end (the touching ends must match: i.e., one’s touch one’s, two’s touch two’s, etc.). If the dots on the exposed ends total any multiple of five the player is awarded that number of points. All sides of the first double (the spinner) may be used one piece to each side and later one to each end. All other doubles are played at right angles to the line and the total points on both ends are counted. Dominoing occurs when one player goes out by playing all of his dominoes. The sum of the spots of all opposing players is computed and added to the dominoing player’s score (rounded to the nearest five). In partnership play the spots of the partner of the one who “DOMINOED” are not counted.
+
+Blocking the Game: If in the course of the game it is impossible for any of the players to play, the game is “Blocked.” The player (or partners) having the least spots in his (or their combined) hand(s) scores the total of the spots in the opponents’ hands (rounded to the nearest five). The score of 355 points is usually considered a game, But you can play as much as you want. The first person (or partnership) to score this amount wins the game. Shuffle and begin a new game. The player who won plays first.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.04606378824" green="0.2017443478" blue="0.54741650819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KiI-tW-bcd" firstAttribute="top" secondItem="aPI-mZ-ixd" secondAttribute="top" id="Xfq-4x-wTY"/>
+                            <constraint firstItem="aPI-mZ-ixd" firstAttribute="trailing" secondItem="KiI-tW-bcd" secondAttribute="trailing" id="bYy-sH-NSu"/>
+                            <constraint firstItem="aPI-mZ-ixd" firstAttribute="bottom" secondItem="KiI-tW-bcd" secondAttribute="bottom" id="ehl-AP-zZw"/>
+                            <constraint firstItem="KiI-tW-bcd" firstAttribute="leading" secondItem="aPI-mZ-ixd" secondAttribute="leading" id="q6w-AP-XPL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aPI-mZ-ixd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zd-1i-DYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="830"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainVCID" id="BYZ-38-t0r" customClass="ViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-YK-bFZ">
+                                <rect key="frame" x="62" y="368" width="290" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2v-Uu-JMU">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="50"/>
+                                        <color key="backgroundColor" red="0.078431372549019607" green="0.050980392156862744" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="n3E-u8-MBD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="team2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgX-cp-hpp">
+                                        <rect key="frame" x="0.0" y="120" width="290" height="50"/>
+                                        <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PXT-KD-qac">
+                                <rect key="frame" x="77" y="64" width="260" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soh-hR-d2p">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5vp-gu-ilS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytm-cW-MU1">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYP-KL-Tgy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiI-L2-Lvx">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CU1-hH-Dt2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nr-14-L83">
+                                        <rect key="frame" x="210" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJ7-m9-F2S"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="2wM-fW-4ew"/>
+                                    <constraint firstAttribute="height" constant="50" id="H3X-jS-Tty"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zjT-Q4-dag">
+                                <rect key="frame" x="77" y="124" width="260" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2v-lf-CEJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="25">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0bg-1q-qBM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQi-o5-mbK">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="30">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SdF-Cm-UOH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilO-QG-GxS">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="35">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1DQ-ow-Z5h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TB-WH-3QV">
+                                        <rect key="frame" x="210" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFl-U3-Wty"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yr6-sA-J89"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-vR-9vM">
+                                <rect key="frame" x="77" y="732" width="260" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4X-8d-h3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttw-Qr-hMo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-mG-nRm">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEC-VR-igg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzj-Jh-zFc">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LW-4a-50c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaS-8J-FLl">
+                                        <rect key="frame" x="210" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhf-67-gmi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ImN-ai-kBs">
+                                <rect key="frame" x="77" y="792" width="260" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-hq-Ztc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="25">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dM5-i5-Fqr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA8-Mj-Pkj">
+                                        <rect key="frame" x="70" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="30">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3M4-pQ-bpC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0A6-yh-aGs">
+                                        <rect key="frame" x="140" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="35">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Fo-Kq-jF1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2og-6I-XSD">
+                                        <rect key="frame" x="210" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="team2ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwB-At-z8N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6HR-cg-HRW"/>
+                                    <constraint firstAttribute="width" constant="260" id="wnH-WB-XnK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074509803921568626" green="0.14509803921568626" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PXT-KD-qac" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1b7-Z7-Md3"/>
+                            <constraint firstItem="RoQ-YK-bFZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CS0-xM-1i2"/>
+                            <constraint firstItem="zjT-Q4-dag" firstAttribute="width" secondItem="PXT-KD-qac" secondAttribute="width" id="I2g-0h-AQu"/>
+                            <constraint firstItem="RoQ-YK-bFZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="IaP-Sh-e6H"/>
+                            <constraint firstItem="PXT-KD-qac" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JUM-L5-3QU"/>
+                            <constraint firstItem="RoQ-YK-bFZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lks-1E-WAW"/>
+                            <constraint firstItem="ImN-ai-kBs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="P9N-Qm-0dz"/>
+                            <constraint firstItem="4Y5-vR-9vM" firstAttribute="centerX" secondItem="ImN-ai-kBs" secondAttribute="centerX" id="Vya-jH-wD0"/>
+                            <constraint firstItem="4Y5-vR-9vM" firstAttribute="width" secondItem="ImN-ai-kBs" secondAttribute="width" id="XMD-IO-3Cl"/>
+                            <constraint firstItem="zjT-Q4-dag" firstAttribute="height" secondItem="PXT-KD-qac" secondAttribute="height" id="XOt-5W-bcF"/>
+                            <constraint firstItem="ImN-ai-kBs" firstAttribute="top" secondItem="4Y5-vR-9vM" secondAttribute="bottom" constant="10" id="YCM-44-eRz"/>
+                            <constraint firstItem="zjT-Q4-dag" firstAttribute="centerX" secondItem="PXT-KD-qac" secondAttribute="centerX" id="k35-Vj-rMv"/>
+                            <constraint firstItem="4Y5-vR-9vM" firstAttribute="height" secondItem="ImN-ai-kBs" secondAttribute="height" id="wQq-Iq-G9O"/>
+                            <constraint firstItem="zjT-Q4-dag" firstAttribute="top" secondItem="PXT-KD-qac" secondAttribute="bottom" constant="10" id="xr9-cb-uEK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ImN-ai-kBs" secondAttribute="bottom" constant="20" id="z2h-ek-g5f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="team1" destination="s2v-Uu-JMU" id="HMc-8h-HG9"/>
+                        <outlet property="team2" destination="jgX-cp-hpp" id="WcQ-WJ-SDY"/>
+                        <outletCollection property="buttonsOutlet" destination="soh-hR-d2p" collectionClass="NSMutableArray" id="uSc-i3-93c"/>
+                        <outletCollection property="buttonsOutlet" destination="ytm-cW-MU1" collectionClass="NSMutableArray" id="kQr-sG-CLZ"/>
+                        <outletCollection property="buttonsOutlet" destination="NiI-L2-Lvx" collectionClass="NSMutableArray" id="cDp-LE-Baa"/>
+                        <outletCollection property="buttonsOutlet" destination="0Nr-14-L83" collectionClass="NSMutableArray" id="EWC-Vf-r5H"/>
+                        <outletCollection property="buttonsOutlet" destination="K2v-lf-CEJ" collectionClass="NSMutableArray" id="lUC-Zz-0s1"/>
+                        <outletCollection property="buttonsOutlet" destination="pQi-o5-mbK" collectionClass="NSMutableArray" id="6BU-Mj-asY"/>
+                        <outletCollection property="buttonsOutlet" destination="ilO-QG-GxS" collectionClass="NSMutableArray" id="h9P-qK-I2n"/>
+                        <outletCollection property="buttonsOutlet" destination="6TB-WH-3QV" collectionClass="NSMutableArray" id="KX3-u0-niZ"/>
+                        <outletCollection property="buttonsOutlet" destination="x4X-8d-h3i" collectionClass="NSMutableArray" id="qVu-Sa-1F4"/>
+                        <outletCollection property="buttonsOutlet" destination="Bzi-mG-nRm" collectionClass="NSMutableArray" id="uHT-rn-bAi"/>
+                        <outletCollection property="buttonsOutlet" destination="wzj-Jh-zFc" collectionClass="NSMutableArray" id="88h-rH-ua8"/>
+                        <outletCollection property="buttonsOutlet" destination="TaS-8J-FLl" collectionClass="NSMutableArray" id="LdE-s8-Igc"/>
+                        <outletCollection property="buttonsOutlet" destination="fAV-hq-Ztc" collectionClass="NSMutableArray" id="j5e-HL-NHf"/>
+                        <outletCollection property="buttonsOutlet" destination="oA8-Mj-Pkj" collectionClass="NSMutableArray" id="2LI-4s-lrr"/>
+                        <outletCollection property="buttonsOutlet" destination="0A6-yh-aGs" collectionClass="NSMutableArray" id="0Lo-Bx-SVZ"/>
+                        <outletCollection property="buttonsOutlet" destination="2og-6I-XSD" collectionClass="NSMutableArray" id="rEj-1c-TdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="118"/>
+        </scene>
+        <!--Three Player View Controller-->
+        <scene sceneID="pNP-MH-XPU">
+            <objects>
+                <viewController storyboardIdentifier="threePlayerVC" id="Ar0-77-98t" customClass="ThreePlayerViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ryf-As-yTk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="uhq-tg-tTk">
+                                <rect key="frame" x="20" y="54" width="374" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMq-gY-BsM">
+                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="50"/>
+                                        <color key="backgroundColor" red="0.078573234379999995" green="0.05067151785" blue="0.020182650539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BV1-a5-LWJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQK-ym-0dj">
+                                        <rect key="frame" x="139.5" y="0.0" width="95" height="50"/>
+                                        <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywb-QH-Jnn">
+                                        <rect key="frame" x="278.5" y="0.0" width="95.5" height="50"/>
+                                        <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="H6V-xv-39E">
+                                <rect key="frame" x="20" y="114" width="374" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojM-rv-eMo">
+                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="50"/>
+                                        <color key="backgroundColor" red="0.078431372549019607" green="0.050980392156862744" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ARS-wI-Z2i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSB-IA-9hl">
+                                        <rect key="frame" x="139.5" y="0.0" width="95" height="50"/>
+                                        <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWj-OH-XG0">
+                                        <rect key="frame" x="278.5" y="0.0" width="95.5" height="50"/>
+                                        <color key="backgroundColor" red="0.078529842200000005" green="0.050868652760000001" blue="0.02377572842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.075604371729999995" green="0.14661499859999999" blue="0.56942528489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-Co-6Di">
+                                <rect key="frame" x="42.5" y="184" width="50" height="435"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfM-VG-qc7">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="KYA-UN-fwv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="UYy-2Y-D1p"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nmY-1c-MpC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-Xa-bB6">
+                                        <rect key="frame" x="0.0" y="55" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="VGT-cu-xye"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="AMS-Aw-LQL"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nse-w0-Ol9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-D2-J83">
+                                        <rect key="frame" x="0.0" y="110" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="gOY-sS-kSg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="WcT-5J-yN4"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOv-Hc-JUw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsF-xp-MKp">
+                                        <rect key="frame" x="0.0" y="165" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="ach-h9-US3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="BCL-YT-Sjy"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUh-eS-Vun"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-aP-kVc">
+                                        <rect key="frame" x="0.0" y="220" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="qWD-lb-X0M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="25">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="KLM-Fd-e4P"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQx-RZ-75g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-gW-GvZ">
+                                        <rect key="frame" x="0.0" y="275" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="797-y6-dwT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="30">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="eKi-z6-Hqt"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9X-md-9wc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLN-sm-5Ic">
+                                        <rect key="frame" x="0.0" y="330" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Ep2-fE-qaP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="35">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="y2C-KY-F9o"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ce-L7-w9K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-vY-QX3">
+                                        <rect key="frame" x="0.0" y="385" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="1c5-0n-oSY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player1ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="gqv-AF-O5F"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWN-dG-6TR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="435" id="Ode-Yg-86g"/>
+                                    <constraint firstAttribute="width" constant="50" id="mJV-td-8FY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-FW-Qr2">
+                                <rect key="frame" x="182" y="184" width="50" height="435"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Som-LB-zrE">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="jfc-9V-D3P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="FaV-yf-3Zn"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJN-NW-9it"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-o4-TeF">
+                                        <rect key="frame" x="0.0" y="55" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="rTe-dp-aVB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="9Sr-pd-Mzj"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sw5-ZE-Rcy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqr-VN-tR9">
+                                        <rect key="frame" x="0.0" y="110" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="0oz-lB-GVy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="eO0-m5-C1z"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEe-Ki-OVi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b9-yQ-fsU">
+                                        <rect key="frame" x="0.0" y="165" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="5Ne-Ue-1xU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="Tbi-Ic-gLV"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxk-7X-Hgl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED5-N9-s8l">
+                                        <rect key="frame" x="0.0" y="220" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="iBf-nf-OZf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="25">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="LaH-nL-RgT"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fu-KL-orT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-8g-TEc">
+                                        <rect key="frame" x="0.0" y="275" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="v5J-QW-x1c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="30">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="MQl-x5-Mzu"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="quo-Ft-Hrq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mep-Q3-Gki">
+                                        <rect key="frame" x="0.0" y="330" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="EdL-i8-8bT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="35">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="zrq-jz-BDx"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aH-iP-iMw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ti5-5e-DDs">
+                                        <rect key="frame" x="0.0" y="385" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="BGW-bs-Qp6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player2ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="Azt-vF-Md4"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gb8-qU-0Vw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XvV-Am-Y54"/>
+                                    <constraint firstAttribute="height" constant="435" id="pPs-lT-ihv"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TEB-GZ-1bQ">
+                                <rect key="frame" x="321.5" y="184" width="50" height="435"/>
+                                <subviews>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21U-lQ-hNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Zfh-lN-yaJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="Z9Q-0u-m0e"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z2G-jp-EO8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fi-jH-W3G">
+                                        <rect key="frame" x="0.0" y="55" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Srb-vN-gcv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="CoV-Yo-RVY"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdp-ca-sJt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAc-OC-Ao3">
+                                        <rect key="frame" x="0.0" y="110" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Ed5-vG-5Qj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="15">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="vMt-be-Wyu"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6JY-qy-MrJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDH-yj-pF7">
+                                        <rect key="frame" x="0.0" y="165" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="u7v-8j-zwY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="20">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="Mm7-Zy-jcX"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a9x-ZC-ecT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-ka-Y2w">
+                                        <rect key="frame" x="0.0" y="220" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="cxP-ze-qJR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="25">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="6rz-Fj-h4h"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NH2-LF-Wj2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb5-Rr-21u">
+                                        <rect key="frame" x="0.0" y="275" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="U8h-tY-HBQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="30">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="cDF-rl-jac"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uj0-ox-lh4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTc-7u-WmM">
+                                        <rect key="frame" x="0.0" y="330" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="U5h-O3-HCZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="35">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="AYf-rk-dG3"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uqg-c4-aEt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-Xq-RST">
+                                        <rect key="frame" x="0.0" y="385" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.067708507180000002" green="0.046673618260000001" blue="0.02293426916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="7wB-XK-CGs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.04302121699" green="0.17963412400000001" blue="0.49064576630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="player3ScoreButton:" destination="Ar0-77-98t" eventType="touchUpInside" id="vPn-97-z3B"/>
+                                            <action selector="team1ScoreAdd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfs-zw-NFu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1cf-D3-Wf9"/>
+                                    <constraint firstAttribute="height" constant="435" id="egv-s7-w87"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.04606378824" green="0.2017443478" blue="0.54741650819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V4U-FW-Qr2" firstAttribute="top" secondItem="mSB-IA-9hl" secondAttribute="bottom" constant="20" id="8az-Dy-JxL"/>
+                            <constraint firstItem="IXF-Co-6Di" firstAttribute="centerX" secondItem="ojM-rv-eMo" secondAttribute="centerX" id="8vl-4J-yhB"/>
+                            <constraint firstItem="TEB-GZ-1bQ" firstAttribute="centerX" secondItem="UWj-OH-XG0" secondAttribute="centerX" id="CJa-M6-fQz"/>
+                            <constraint firstItem="H6V-xv-39E" firstAttribute="height" secondItem="uhq-tg-tTk" secondAttribute="height" id="JMA-yj-rDb"/>
+                            <constraint firstItem="H6V-xv-39E" firstAttribute="width" secondItem="uhq-tg-tTk" secondAttribute="width" id="Jqy-ng-mAL"/>
+                            <constraint firstItem="H6V-xv-39E" firstAttribute="centerX" secondItem="uhq-tg-tTk" secondAttribute="centerX" id="Jwr-Qw-8aj"/>
+                            <constraint firstItem="IXF-Co-6Di" firstAttribute="top" secondItem="ojM-rv-eMo" secondAttribute="bottom" constant="20" id="ZFB-q3-tMh"/>
+                            <constraint firstItem="TEB-GZ-1bQ" firstAttribute="top" secondItem="UWj-OH-XG0" secondAttribute="bottom" constant="20" id="ZGj-MO-mC8"/>
+                            <constraint firstItem="Idu-FW-UrQ" firstAttribute="trailing" secondItem="uhq-tg-tTk" secondAttribute="trailing" constant="20" id="dI4-Rx-SB0"/>
+                            <constraint firstItem="H6V-xv-39E" firstAttribute="top" secondItem="uhq-tg-tTk" secondAttribute="bottom" constant="10" id="k4d-Kf-3qF"/>
+                            <constraint firstItem="V4U-FW-Qr2" firstAttribute="centerX" secondItem="mSB-IA-9hl" secondAttribute="centerX" id="phT-dS-6Tp"/>
+                            <constraint firstItem="uhq-tg-tTk" firstAttribute="leading" secondItem="Idu-FW-UrQ" secondAttribute="leading" constant="20" id="tG3-2x-NiB"/>
+                            <constraint firstItem="uhq-tg-tTk" firstAttribute="top" secondItem="Idu-FW-UrQ" secondAttribute="top" constant="10" id="xgL-99-R0U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Idu-FW-UrQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="player1Label" destination="UMq-gY-BsM" id="eGZ-oA-ede"/>
+                        <outlet property="player1ScoreLabel" destination="ojM-rv-eMo" id="Zlz-aG-8w9"/>
+                        <outlet property="player2Label" destination="pQK-ym-0dj" id="PzL-4A-Tse"/>
+                        <outlet property="player2ScoreLabel" destination="mSB-IA-9hl" id="dGk-7o-UBl"/>
+                        <outlet property="player3Label" destination="ywb-QH-Jnn" id="4by-Xk-7cz"/>
+                        <outlet property="player3ScoreLabel" destination="UWj-OH-XG0" id="sTo-cy-Idz"/>
+                        <outletCollection property="buttonsOutlet" destination="tfM-VG-qc7" collectionClass="NSMutableArray" id="o7i-Os-cn6"/>
+                        <outletCollection property="buttonsOutlet" destination="P2H-Xa-bB6" collectionClass="NSMutableArray" id="5uy-Av-IgK"/>
+                        <outletCollection property="buttonsOutlet" destination="g8S-D2-J83" collectionClass="NSMutableArray" id="EZT-Xu-uQl"/>
+                        <outletCollection property="buttonsOutlet" destination="zsF-xp-MKp" collectionClass="NSMutableArray" id="qQx-7m-Lv1"/>
+                        <outletCollection property="buttonsOutlet" destination="ZUG-aP-kVc" collectionClass="NSMutableArray" id="QLO-Wu-EaI"/>
+                        <outletCollection property="buttonsOutlet" destination="ERN-gW-GvZ" collectionClass="NSMutableArray" id="orq-Wy-r6b"/>
+                        <outletCollection property="buttonsOutlet" destination="BLN-sm-5Ic" collectionClass="NSMutableArray" id="Oko-eY-vAp"/>
+                        <outletCollection property="buttonsOutlet" destination="Fu8-vY-QX3" collectionClass="NSMutableArray" id="hS7-03-71x"/>
+                        <outletCollection property="buttonsOutlet" destination="Ti5-5e-DDs" collectionClass="NSMutableArray" id="hZV-dh-0mn"/>
+                        <outletCollection property="buttonsOutlet" destination="mep-Q3-Gki" collectionClass="NSMutableArray" id="v6f-mN-NmI"/>
+                        <outletCollection property="buttonsOutlet" destination="AQ4-8g-TEc" collectionClass="NSMutableArray" id="JtQ-hO-BvK"/>
+                        <outletCollection property="buttonsOutlet" destination="ED5-N9-s8l" collectionClass="NSMutableArray" id="mOh-0H-2N3"/>
+                        <outletCollection property="buttonsOutlet" destination="8b9-yQ-fsU" collectionClass="NSMutableArray" id="kfo-v8-o5p"/>
+                        <outletCollection property="buttonsOutlet" destination="Gqr-VN-tR9" collectionClass="NSMutableArray" id="L0i-ca-wIa"/>
+                        <outletCollection property="buttonsOutlet" destination="XNb-o4-TeF" collectionClass="NSMutableArray" id="nG3-Vd-cav"/>
+                        <outletCollection property="buttonsOutlet" destination="Som-LB-zrE" collectionClass="NSMutableArray" id="H0V-yJ-kb3"/>
+                        <outletCollection property="buttonsOutlet" destination="21U-lQ-hNn" collectionClass="NSMutableArray" id="0a5-d5-XlU"/>
+                        <outletCollection property="buttonsOutlet" destination="1Fi-jH-W3G" collectionClass="NSMutableArray" id="r5V-qe-XrU"/>
+                        <outletCollection property="buttonsOutlet" destination="RAc-OC-Ao3" collectionClass="NSMutableArray" id="UxT-98-WLb"/>
+                        <outletCollection property="buttonsOutlet" destination="NDH-yj-pF7" collectionClass="NSMutableArray" id="6KX-fh-648"/>
+                        <outletCollection property="buttonsOutlet" destination="k9V-ka-Y2w" collectionClass="NSMutableArray" id="mJ3-zo-aAC"/>
+                        <outletCollection property="buttonsOutlet" destination="fb5-Rr-21u" collectionClass="NSMutableArray" id="ds1-bs-5zF"/>
+                        <outletCollection property="buttonsOutlet" destination="XTc-7u-WmM" collectionClass="NSMutableArray" id="El0-RC-9eF"/>
+                        <outletCollection property="buttonsOutlet" destination="tuQ-Xq-RST" collectionClass="NSMutableArray" id="FeO-eR-SZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lT-GJ-jTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056.521739130435" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jsg-PF-RnK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="469-Ty-6b6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5qa-R3-mff">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.082028858359999998" green="0.050899393860000003" blue="0.020404219630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z2y-wd-tN1" kind="relationship" relationship="rootViewController" id="mkb-0M-CDK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXD-CT-aTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.375" y="118.30985915492958"/>
+        </scene>
+        <!--Colors View Controller-->
+        <scene sceneID="aXd-gG-RRu">
+            <objects>
+                <viewController storyboardIdentifier="colorsVC" id="bGE-FG-V1U" customClass="ColorsViewController" customModule="DominoScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NU7-6D-dIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="G9G-KC-fga"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t3S-pi-bXM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JvT-r7-Iba">
+                                <rect key="frame" x="8" y="488" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotCornerColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="qpY-Zx-1jZ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="W6q-9L-uqF">
+                                <rect key="frame" x="8" y="189" width="398" height="31"/>
+                                <connections>
+                                    <action selector="backgroundColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="3pC-GZ-Pi5"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-ph-Wx6">
+                                <rect key="frame" x="8" y="154" width="398" height="31"/>
+                                <connections>
+                                    <action selector="backgroundColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="LBh-eL-LIh"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZX-mE-Y4p">
+                                <rect key="frame" x="157" y="54" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BcD-cf-bNs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="FlV-EP-YGC"/>
+                                </constraints>
+                                <string key="text">Background 
+color</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB2-bx-FBd">
+                                <rect key="frame" x="157" y="234" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="7eX-Ba-y9I"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pk6-qm-mVs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-iO-znX">
+                                <rect key="frame" x="157" y="678" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.050980392156862744" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="66z-3d-emS"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fb0-gU-4r3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.04606378824" green="0.2017443478" blue="0.54741650819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButton:" destination="bGE-FG-V1U" eventType="touchUpInside" id="NR0-LA-uWP"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8BH-Fx-b3T">
+                                <rect key="frame" x="8" y="119" width="398" height="31"/>
+                                <connections>
+                                    <action selector="backgroundColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="t6U-cZ-t0G"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pcR-cT-7qs">
+                                <rect key="frame" x="8" y="523" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotCornerColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="vWZ-9e-kVb"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SVd-QR-kwn">
+                                <rect key="frame" x="8" y="299" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="2fT-Ry-Das"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="SvK-yZ-buI">
+                                <rect key="frame" x="8" y="334" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="mUP-0Y-PY6"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="39j-3r-YD4">
+                                <rect key="frame" x="8" y="369" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="P1i-Lt-jJM"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WQ0-so-qcq">
+                                <rect key="frame" x="8" y="558" width="398" height="31"/>
+                                <connections>
+                                    <action selector="dotCornerColor:" destination="bGE-FG-V1U" eventType="valueChanged" id="qHv-pq-NcZ"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3f-GT-Mef">
+                                <rect key="frame" x="182" y="608" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Nt-A3-oPj"/>
+                                    <constraint firstAttribute="width" constant="50" id="pIa-Qf-cZF"/>
+                                </constraints>
+                                <state key="normal" title="5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text color" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-Ck-HRp">
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="JBr-BY-MmM"/>
+                                    <constraint firstAttribute="height" constant="50" id="WZG-Ty-u7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.05158714205" green="0.236058563" blue="0.52921408410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="8BH-Fx-b3T" secondAttribute="trailing" constant="10" id="2qU-Cm-mzo"/>
+                            <constraint firstItem="VZX-mE-Y4p" firstAttribute="top" secondItem="SvO-G0-xx5" secondAttribute="top" constant="10" id="849-ka-lwR"/>
+                            <constraint firstItem="SvK-yZ-buI" firstAttribute="centerX" secondItem="SVd-QR-kwn" secondAttribute="centerX" id="CTw-Sf-Qg3"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="W6q-9L-uqF" secondAttribute="trailing" constant="10" id="CXG-n0-iSz"/>
+                            <constraint firstItem="JvT-r7-Iba" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="EYq-22-Sbu"/>
+                            <constraint firstItem="pcR-cT-7qs" firstAttribute="centerX" secondItem="JvT-r7-Iba" secondAttribute="centerX" id="G9q-Jh-BuS"/>
+                            <constraint firstItem="pcR-cT-7qs" firstAttribute="top" secondItem="JvT-r7-Iba" secondAttribute="bottom" constant="5" id="Hsu-0h-9Na"/>
+                            <constraint firstItem="39j-3r-YD4" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="IwH-KQ-hdh"/>
+                            <constraint firstItem="cB2-bx-FBd" firstAttribute="top" secondItem="W6q-9L-uqF" secondAttribute="bottom" constant="15" id="JED-ec-d6e"/>
+                            <constraint firstItem="pcR-cT-7qs" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="KJ5-Mh-oxJ"/>
+                            <constraint firstItem="WQ0-so-qcq" firstAttribute="top" secondItem="pcR-cT-7qs" secondAttribute="bottom" constant="5" id="KXY-Vo-VTD"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="pcR-cT-7qs" secondAttribute="trailing" constant="10" id="LIX-b2-mGf"/>
+                            <constraint firstItem="8BH-Fx-b3T" firstAttribute="top" secondItem="VZX-mE-Y4p" secondAttribute="bottom" constant="15" id="LPE-Yn-gba"/>
+                            <constraint firstItem="hJD-iO-znX" firstAttribute="centerX" secondItem="m3f-GT-Mef" secondAttribute="centerX" id="Lht-76-vDM"/>
+                            <constraint firstItem="JvT-r7-Iba" firstAttribute="centerX" secondItem="Xqh-Ck-HRp" secondAttribute="centerX" id="Ovo-h2-UeS"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="jVP-ph-Wx6" secondAttribute="trailing" constant="10" id="PQf-oC-MLo"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="WQ0-so-qcq" secondAttribute="trailing" constant="10" id="QW0-YT-nFT"/>
+                            <constraint firstItem="39j-3r-YD4" firstAttribute="centerX" secondItem="SvK-yZ-buI" secondAttribute="centerX" id="U6o-mD-bCq"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="JvT-r7-Iba" secondAttribute="trailing" constant="10" id="UMz-3t-LAy"/>
+                            <constraint firstItem="Xqh-Ck-HRp" firstAttribute="top" secondItem="39j-3r-YD4" secondAttribute="bottom" constant="24" id="acO-vH-072"/>
+                            <constraint firstItem="jVP-ph-Wx6" firstAttribute="top" secondItem="8BH-Fx-b3T" secondAttribute="bottom" constant="5" id="bGL-aO-5uL"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="SvK-yZ-buI" secondAttribute="trailing" constant="10" id="bIh-gO-3dw"/>
+                            <constraint firstItem="SvK-yZ-buI" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="dh0-e0-oON"/>
+                            <constraint firstItem="hJD-iO-znX" firstAttribute="top" secondItem="m3f-GT-Mef" secondAttribute="bottom" constant="20" id="diN-OO-HK5"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="39j-3r-YD4" secondAttribute="trailing" constant="10" id="eH3-nc-JTF"/>
+                            <constraint firstItem="cB2-bx-FBd" firstAttribute="centerX" secondItem="W6q-9L-uqF" secondAttribute="centerX" id="ehl-rs-a5u"/>
+                            <constraint firstItem="8BH-Fx-b3T" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="f8D-Se-zHK"/>
+                            <constraint firstItem="WQ0-so-qcq" firstAttribute="centerX" secondItem="pcR-cT-7qs" secondAttribute="centerX" id="fRc-0T-pUL"/>
+                            <constraint firstItem="WQ0-so-qcq" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="iE0-SE-TWB"/>
+                            <constraint firstItem="SVd-QR-kwn" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="iLL-55-DZs"/>
+                            <constraint firstItem="W6q-9L-uqF" firstAttribute="centerX" secondItem="jVP-ph-Wx6" secondAttribute="centerX" id="ivq-7Y-q0D"/>
+                            <constraint firstItem="SVd-QR-kwn" firstAttribute="centerX" secondItem="cB2-bx-FBd" secondAttribute="centerX" id="j9F-Rm-YHs"/>
+                            <constraint firstItem="m3f-GT-Mef" firstAttribute="centerX" secondItem="WQ0-so-qcq" secondAttribute="centerX" id="jGe-k6-PS5"/>
+                            <constraint firstItem="W6q-9L-uqF" firstAttribute="top" secondItem="jVP-ph-Wx6" secondAttribute="bottom" constant="5" id="lMc-4G-WlC"/>
+                            <constraint firstItem="VZX-mE-Y4p" firstAttribute="centerX" secondItem="SvO-G0-xx5" secondAttribute="centerX" id="mQ7-t4-XBF"/>
+                            <constraint firstItem="39j-3r-YD4" firstAttribute="top" secondItem="SvK-yZ-buI" secondAttribute="bottom" constant="5" id="n8M-yu-2uc"/>
+                            <constraint firstItem="JvT-r7-Iba" firstAttribute="top" secondItem="Xqh-Ck-HRp" secondAttribute="bottom" constant="15" id="nBA-ql-LwL"/>
+                            <constraint firstItem="8BH-Fx-b3T" firstAttribute="centerX" secondItem="VZX-mE-Y4p" secondAttribute="centerX" id="o7Q-Kl-lut"/>
+                            <constraint firstItem="m3f-GT-Mef" firstAttribute="top" secondItem="WQ0-so-qcq" secondAttribute="bottom" constant="20" id="obe-bI-JAh"/>
+                            <constraint firstItem="SVd-QR-kwn" firstAttribute="top" secondItem="cB2-bx-FBd" secondAttribute="bottom" constant="15" id="osg-lg-wEb"/>
+                            <constraint firstItem="Xqh-Ck-HRp" firstAttribute="centerX" secondItem="39j-3r-YD4" secondAttribute="centerX" id="r2W-4K-Wub"/>
+                            <constraint firstItem="SvO-G0-xx5" firstAttribute="trailing" secondItem="SVd-QR-kwn" secondAttribute="trailing" constant="10" id="rIT-MP-Mgz"/>
+                            <constraint firstItem="W6q-9L-uqF" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="rTa-8V-kCC"/>
+                            <constraint firstItem="jVP-ph-Wx6" firstAttribute="centerX" secondItem="8BH-Fx-b3T" secondAttribute="centerX" id="rmH-Vc-dPt"/>
+                            <constraint firstItem="SvK-yZ-buI" firstAttribute="top" secondItem="SVd-QR-kwn" secondAttribute="bottom" constant="5" id="sy5-jq-aAg"/>
+                            <constraint firstItem="jVP-ph-Wx6" firstAttribute="leading" secondItem="SvO-G0-xx5" secondAttribute="leading" constant="10" id="tpw-sA-u04"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SvO-G0-xx5"/>
+                    </view>
+                    <connections>
+                        <outlet property="example" destination="m3f-GT-Mef" id="DS5-SB-2X1"/>
+                        <outletCollection property="sliders" destination="8BH-Fx-b3T" collectionClass="NSMutableArray" id="t73-4j-ImF"/>
+                        <outletCollection property="sliders" destination="jVP-ph-Wx6" collectionClass="NSMutableArray" id="1pF-d9-Ik8"/>
+                        <outletCollection property="sliders" destination="W6q-9L-uqF" collectionClass="NSMutableArray" id="c8b-S5-cS6"/>
+                        <outletCollection property="sliders" destination="SVd-QR-kwn" collectionClass="NSMutableArray" id="6da-v3-rAA"/>
+                        <outletCollection property="sliders" destination="SvK-yZ-buI" collectionClass="NSMutableArray" id="cYL-mx-9SI"/>
+                        <outletCollection property="sliders" destination="39j-3r-YD4" collectionClass="NSMutableArray" id="vXl-XN-lWz"/>
+                        <outletCollection property="sliders" destination="JvT-r7-Iba" collectionClass="NSMutableArray" id="zmJ-jF-U15"/>
+                        <outletCollection property="sliders" destination="pcR-cT-7qs" collectionClass="NSMutableArray" id="GSe-w2-q8O"/>
+                        <outletCollection property="sliders" destination="WQ0-so-qcq" collectionClass="NSMutableArray" id="pds-e1-KoU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQu-6A-6Sx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="830"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Domino Score.png" width="293" height="294"/>
+    </resources>
+</document>
